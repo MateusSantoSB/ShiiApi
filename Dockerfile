@@ -5,7 +5,7 @@ RUN apt-get install openjdk-21-jdk -y
 
 COPY . .
 
-RUN apt-get intall maven -y
+RUN apt-get install maven -y
 
 RUN mvn clean install
 
