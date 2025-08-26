@@ -35,6 +35,12 @@ public class SecretsController {
 		
 	}
 	
+	
+	@GetMapping("/")
+	public ResponseEntity<Void> home(){
+		return ResponseEntity.ok().build();
+	}
+	
 	@PostMapping("/secret")
 	public ResponseEntity<Void> saveSecret(@RequestBody SecretsDTO dto){
 		Secrets secret=mapper.toEntity(dto);
